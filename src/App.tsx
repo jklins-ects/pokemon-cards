@@ -65,8 +65,9 @@ function App() {
                 selectedPokemon={selectedPokemon}
                 onSelectPokemon={handleSelectPokemon}
             />
-            {/* If a Pokemon is selected, disply the details. Otherwise don't.
-            This is a CONDITIONAL RENDER */}
+            {/* If a Pokemon is selected, display the details. Otherwise don't.
+            This is a CONDITIONAL RENDER eg. true && "dog" == "dog"
+            false && "dog" == false*/}
             {selectedPokemon && <PokemonDetails pokemon={selectedPokemon} />}
         </div>
     );
